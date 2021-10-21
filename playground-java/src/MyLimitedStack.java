@@ -23,7 +23,7 @@ public class MyLimitedStack<T> {
     }
 
     public void push(T t) {
-        if(!this.isFull()) {
+        if (!this.isFull()) {
             this.node[pointer] = t;
             this.pointer += 1;
         } else System.out.println("Stack is full!");
@@ -49,9 +49,10 @@ public class MyLimitedStack<T> {
 
         return output;
     }
-}
 
-class MyLimitedStackTest {
+    /**
+     * Main
+     */
     public static void main(String[] args) {
         MyLimitedStack<Integer> myStack = new MyLimitedStack<Integer>(5);
 
