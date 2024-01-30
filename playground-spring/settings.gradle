@@ -1,1 +1,6 @@
 rootProject.name = 'spring-playground'
+include 'domains'
+include 'client'
+include 'plugins'
+include 'service'
+
