@@ -8,6 +8,7 @@ class SpringPlaygroundApplicationTests {
 
     @Test
     void contextLoads() {
+
     }
 
 }
