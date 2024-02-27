@@ -1,4 +1,4 @@
-package me.jeongph.springplayground.controller;
+package me.jeongph.playground.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

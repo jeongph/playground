@@ -1,4 +1,4 @@
-package me.jeongph.springplayground;
+package me.jeongph.playground;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
