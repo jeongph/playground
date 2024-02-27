@@ -1,20 +1,15 @@
-plugins {
-    id 'org.springframework.boot'
-    id 'io.spring.dependency-management'
-}
+archivesBaseName = 'spring-playground-service'
+version '0.0.1'
 
-ext {
-    set('springCloudVersion', "2023.0.0")
-}
+bootJar.enabled true
 
 dependencies {
+    implementation project(':client')
+
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
-    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+//    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
-
-    // documentation
-    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
 
     // cloud
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
