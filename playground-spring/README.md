@@ -5,3 +5,4 @@
 # References
 
 - https://projectlombok.org/setup/gradle
+- https://stackoverflow.com/questions/16942193/spring-mvc-complex-object-as-get-requestparam
