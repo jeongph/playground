@@ -14,6 +14,9 @@ spring:
         format_sql: true
         show_sql: true
     defer-datasource-initialization: true
+  jackson:
+    deserialization:
+      adjust-dates-to-context-time-zone: false
 
 logging:
   level:
