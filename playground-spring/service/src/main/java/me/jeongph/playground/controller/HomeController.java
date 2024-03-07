@@ -30,4 +30,9 @@ public class HomeController {
         return ResponseEntity.ok("Hello, this is Spring Playground!");
     }
 
+    @GetMapping("/get-record")
+    public ResponseEntity<User> getRecord() {
+        return ResponseEntity.ok(new User("jeongph", 3));
+    }
+
 }
