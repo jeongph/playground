@@ -12,4 +12,8 @@ public record Kilogram(
         }
     }
 
+    public Gram toGram() {
+        return new Gram((int) (value * Math.pow(10, 3)));
+    }
+
 }

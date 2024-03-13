@@ -13,7 +13,7 @@ public record Centimeter(
     }
 
     public Meter toMeter() {
-        return new Meter(value / 100);
+        return new Meter(value / Math.pow(10, 2));
     }
 
 }
