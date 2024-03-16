@@ -3,5 +3,7 @@ include 'domains'
 include 'client'
 include 'plugins'
 include 'service'
+
 include 'modules'
+include 'modules:common'; findProject(':modules:common')?.name = 'common'
 

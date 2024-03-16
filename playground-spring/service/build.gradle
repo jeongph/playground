@@ -4,6 +4,7 @@ version '0.0.1'
 bootJar.enabled true
 
 dependencies {
+    implementation project(':modules').subprojects
     implementation project(':client')
 
     implementation 'org.springframework.boot:spring-boot-starter-web'

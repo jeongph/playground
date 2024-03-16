@@ -1,4 +1,4 @@
-package me.jeongph.playground.enums;
+package me.jeonguk.enums;
 
 public enum Culture {
     KOREA,

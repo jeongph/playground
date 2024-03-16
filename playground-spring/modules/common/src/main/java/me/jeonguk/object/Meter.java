@@ -1,4 +1,4 @@
-package me.jeongph.playground.object;
+package me.jeonguk.object;
 
 public record Meter(
         double value
