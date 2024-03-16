@@ -1,6 +1,5 @@
 package me.jeonguk.object;
 
-
 import me.jeonguk.enums.Culture;
 
 public record Name(
