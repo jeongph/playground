@@ -1,13 +1,12 @@
-package me.jeongph.springplayground.integration;
+package me.jeongph.playground.integration;
 
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
-import me.jeongph.springplayground.integration.config.AcceptanceTest;
+import me.jeongph.playground.integration.config.AcceptanceTest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
-import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.Map;
 

@@ -1,9 +1,9 @@
-package me.jeongph.springplayground.temp;
+package me.jeongph.playground.curiosity;
 
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
-import me.jeongph.springplayground.integration.config.AcceptanceTest;
+import me.jeongph.playground.integration.config.AcceptanceTest;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

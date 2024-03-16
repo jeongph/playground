@@ -1,6 +1,7 @@
-package me.jeongph.springplayground.integration.config;
+package me.jeongph.playground.integration.config;
 
 import io.restassured.RestAssured;
+import io.restassured.specification.RequestSpecification;
 import me.jeongph.playground.SpringPlaygroundApplication;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,6 +22,11 @@ public class AcceptanceTest {
     @BeforeEach
     public void setUp() {
         RestAssured.port = port;
+    }
+
+    public RequestSpecification defaultRestAssured() {
+        return RestAssured
+                .given().contentType("application/json").log().all();
     }
 
 }
