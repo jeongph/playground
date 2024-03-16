@@ -3,4 +3,5 @@ include 'domains'
 include 'client'
 include 'plugins'
 include 'service'
+include 'modules'
 
