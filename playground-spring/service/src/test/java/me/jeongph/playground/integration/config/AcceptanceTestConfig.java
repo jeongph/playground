@@ -14,7 +14,7 @@ import org.springframework.test.context.ActiveProfiles;
         classes = SpringPlaygroundApplication.class,
         properties = "spring.profiles.active=test"
 )
-public class AcceptanceTest {
+public class AcceptanceTestConfig {
 
     @LocalServerPort
     int port;

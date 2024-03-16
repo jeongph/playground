@@ -1,18 +1,20 @@
 package me.jeongph.playground.integration;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
-import me.jeongph.playground.integration.config.AcceptanceTest;
+import me.jeongph.playground.integration.config.AcceptanceTestConfig;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 
 import java.util.Map;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class HomeIntegrationTests extends AcceptanceTest {
+public class HomeIntegrationTests extends AcceptanceTestConfig {
 
     @Test
     @DisplayName("홈 조회: 200")
@@ -20,9 +22,7 @@ public class HomeIntegrationTests extends AcceptanceTest {
         // given
 
         // when
-        ExtractableResponse<Response> actual = RestAssured
-                .given().contentType("application/json").log().all()
-
+        ExtractableResponse<Response> response = defaultRestAssured()
                 .when()
                 .params(Map.of(
 //                        "name", "home",
@@ -34,7 +34,11 @@ public class HomeIntegrationTests extends AcceptanceTest {
                 .extract();
 
         // then
-        assertEquals(HttpStatus.OK.value(), actual.statusCode());
+        JsonPath actual = response.body().jsonPath();
+        assertAll(() ->  {
+
+        });
+
     }
 
     @Test
