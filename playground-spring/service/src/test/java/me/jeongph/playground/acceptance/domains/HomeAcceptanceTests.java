@@ -1,4 +1,4 @@
-package me.jeongph.playground.acceptance;
+package me.jeongph.playground.acceptance.domains;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -14,7 +14,7 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class HomeIntegrationTests extends AcceptanceTest {
+public class HomeAcceptanceTests extends AcceptanceTest {
 
     @Test
     @DisplayName("홈 조회: 200")
