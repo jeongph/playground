@@ -1,4 +1,4 @@
-package me.jeongph.playground.integration.utils;
+package me.jeongph.playground.acceptance.utils;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;

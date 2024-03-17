@@ -1,4 +1,4 @@
-package me.jeongph.playground.integration.config;
+package me.jeongph.playground.acceptance.config;
 
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
@@ -14,7 +14,7 @@ import org.springframework.test.context.ActiveProfiles;
         classes = SpringPlaygroundApplication.class,
         properties = "spring.profiles.active=test"
 )
-public class AcceptanceTestConfig {
+public class AcceptanceTest {
 
     @LocalServerPort
     int port;
@@ -25,8 +25,7 @@ public class AcceptanceTestConfig {
     }
 
     public RequestSpecification defaultRestAssured() {
-        return RestAssured
-                .given().contentType("application/json").log().all();
+        return RestAssured.given().contentType("application/json").log().all();
     }
 
 }
