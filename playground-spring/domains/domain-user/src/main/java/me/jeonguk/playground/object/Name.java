@@ -1,6 +1,6 @@
-package me.jeonguk.object;
+package me.jeonguk.playground.object;
 
-import me.jeonguk.enums.Culture;
+import me.jeonguk.playground.enums.Culture;
 
 public record Name(
         String firstName,

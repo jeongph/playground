@@ -1,4 +1,4 @@
-package me.jeonguk.object;
+package me.jeonguk.playground.object;
 
 public record Kilogram(
         double value

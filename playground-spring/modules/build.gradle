@@ -1,13 +1,3 @@
-archivesBaseName = 'spring-playground-modules'
-version '0.0.1'
-
 subprojects {
-    dependencies {
-        testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
-        testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    }
 
-    tasks.named('test') {
-        useJUnitPlatform()
-    }
 }
