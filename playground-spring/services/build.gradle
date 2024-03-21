@@ -7,7 +7,7 @@ dependencies {
     implementation project(':modules').subprojects
     implementation project(':domains').subprojects
     implementation project(':plugins').subprojects
-    implementation project(':client')
+    implementation project(':clients')
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'

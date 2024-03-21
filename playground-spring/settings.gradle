@@ -1,8 +1,8 @@
 rootProject.name = 'spring-playground'
+include 'clients'
 include 'domains'
-include 'client'
 include 'plugins'
-include 'service'
+include 'services'
 
 include 'modules'
 include 'modules:common'; findProject(':modules:common')?.name = 'common'
