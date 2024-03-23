@@ -8,3 +8,6 @@ include 'plugins'
 include 'services'
 
 include 'modules'
+include 'modules:backend-module-jpa'
+findProject(':modules:backend-module-jpa')?.name = 'backend-module-jpa'
+
