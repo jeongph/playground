@@ -1,6 +1,5 @@
-archivesBaseName = 'spring-playground-domains'
-version '0.0.1'
+subprojects {
+    dependencies {
 
-dependencies {
-
+    }
 }

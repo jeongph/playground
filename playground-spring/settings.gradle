@@ -2,12 +2,12 @@ rootProject.name = 'spring-playground'
 include 'clients'
 
 include 'domains'
-include 'domains:domain-user'; findProject(':domains:domain-user')?.name = 'domain-user'
+include 'domains:playground-domain-user'; findProject(':domains:playground-domain-user')?.name = 'playground-domain-user'
 
 include 'plugins'
 include 'services'
 
 include 'modules'
-include 'modules:backend-module-jpa'
-findProject(':modules:backend-module-jpa')?.name = 'backend-module-jpa'
+include 'modules:playground-module-jpa'; findProject(':modules:playground-module-jpa')?.name = 'playground-module-jpa'
+include 'modules:playground-common'; findProject(':modules:playground-common')?.name = 'playground-common'
 
