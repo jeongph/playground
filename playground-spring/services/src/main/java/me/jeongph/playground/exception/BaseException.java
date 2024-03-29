@@ -26,7 +26,7 @@ public class BaseException extends RuntimeException {
     }
 
     public ExceptionResponse toResponse(String path) {
-        return new ExceptionResponse(timestamp, status.value(), code, message, errors, path);
+        return new ExceptionResponse(timestamp, status.value(), code, message, path);
     }
 
 }
