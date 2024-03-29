@@ -4,10 +4,10 @@ version '0.0.1'
 bootJar.enabled true
 
 dependencies {
-    implementation project(':modules').subprojects
-    implementation project(':domains').subprojects
-    implementation project(':plugins').subprojects
     implementation project(':clients').subprojects
+    implementation project(':domains').subprojects
+    implementation project(':modules').subprojects
+    implementation project(':plugins').subprojects
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'

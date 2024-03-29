@@ -1,3 +1,5 @@
 subprojects {
-    dependencies { }
+    dependencies {
+        implementation project(':modules:playground-common')
+    }
 }
