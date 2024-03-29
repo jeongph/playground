@@ -1,6 +1,7 @@
 package me.jeonguk.playground.object;
 
-import me.jeonguk.playground.enums.Culture;
+import me.jeonguk.playground.domain.user.enums.Culture;
+import me.jeonguk.playground.domain.user.object.Name;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;

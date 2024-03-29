@@ -1,7 +1,7 @@
 package me.jeongph.playground.controller;
 
 import lombok.RequiredArgsConstructor;
-import me.jeongph.playground.contract.TestContract;
+import me.jeongph.playground.client.web.contract.TestContract;
 import me.jeongph.playground.exception.ErrorCode;
 import me.jeongph.playground.exception.NotFoundException;
 import org.springframework.web.bind.annotation.GetMapping;

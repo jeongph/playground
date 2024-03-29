@@ -1,4 +1,4 @@
-package me.jeongph.playground.contract;
+package me.jeongph.playground.client.web.contract;
 
 import org.springframework.web.bind.annotation.GetMapping;
 

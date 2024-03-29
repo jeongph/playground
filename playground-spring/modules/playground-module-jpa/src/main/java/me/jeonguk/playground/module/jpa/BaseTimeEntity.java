@@ -1,4 +1,4 @@
-package me.jeonguk.module.jpa;
+package me.jeonguk.playground.module.jpa;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

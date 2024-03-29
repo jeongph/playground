@@ -1,4 +1,4 @@
-package me.jeonguk.playground.object;
+package me.jeonguk.playground.domain.user.object;
 
 public record Centimeter(
         double value

@@ -1,8 +1,8 @@
-package me.jeongph.playground.contract;
+package me.jeongph.playground.client.web.contract;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import me.jeongph.playground.request.UserCreateReq;
+import me.jeongph.playground.client.web.request.UserCreateReq;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
