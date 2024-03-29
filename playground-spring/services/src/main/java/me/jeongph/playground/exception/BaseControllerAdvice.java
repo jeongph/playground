@@ -15,8 +15,9 @@ public class BaseControllerAdvice {
 
     @ExceptionHandler(BaseException.class)
     public ResponseEntity<ExceptionResponse> handleException(HttpServletRequest request, BaseException e) {
-        log.error("Error occurred", e);
-        return new ResponseEntity<>(e.toResponse(), e.getStatus());
+        log.error("Error occurred: {}", e.toString());
+        String requestURI = request.getRequestURI(); // 안에 뭐가 더들었나 궁금쓰
+        return new ResponseEntity<>(e.toResponse(requestURI), e.getStatus());
     }
 
 }

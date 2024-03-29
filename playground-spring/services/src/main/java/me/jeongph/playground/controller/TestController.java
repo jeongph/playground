@@ -2,8 +2,8 @@ package me.jeongph.playground.controller;
 
 import lombok.RequiredArgsConstructor;
 import me.jeongph.playground.contract.TestContract;
-import me.jeongph.playground.exception.BaseException;
-import org.springframework.http.HttpStatus;
+import me.jeongph.playground.exception.ErrorCode;
+import me.jeongph.playground.exception.NotFoundException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +20,7 @@ public class TestController implements TestContract {
 
     @GetMapping("/throw")
     public String returnThrow() {
-        throw new BaseException(HttpStatus.NOT_FOUND, "NOT_FOUND", "Not Found", null, "/throw");
+        throw new NotFoundException(ErrorCode.USER_NOT_FOUND);
     }
 
 }
