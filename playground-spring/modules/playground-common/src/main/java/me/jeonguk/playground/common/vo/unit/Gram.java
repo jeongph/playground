@@ -1,4 +1,4 @@
-package me.jeonguk.playground.domain.user.object;
+package me.jeonguk.playground.common.vo.unit;
 
 public record Gram(
         int value
