@@ -22,6 +22,12 @@ spring:
     deserialization:
       adjust-dates-to-context-time-zone: false
 
+jwt:
+  # echo 'spring-playgroundspring-playgroundspring-playgroundspring-playgroundspring-playgroundspring-playgroundspring-playgroundspring-playgroundspring-playgroundspring-playground'|base64
+  secret: c3ByaW5nLXBsYXlncm91bmRzcHJpbmctcGxheWdyb3VuZHNwcmluZy1wbGF5Z3JvdW5kc3ByaW5nLXBsYXlncm91bmRzcHJpbmctcGxheWdyb3VuZHNwcmluZy1wbGF5Z3JvdW5kc3ByaW5nLXBsYXlncm91bmRzcHJpbmctcGxheWdyb3VuZHNwcmluZy1wbGF5Z3JvdW5kc3ByaW5nLXBsYXlncm91bmQK
+  token-validity-in-milliseconds: 86400000
+
 logging:
   level:
     root: info
+#    root: debug
