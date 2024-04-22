@@ -35,8 +35,7 @@ public class SecurityConfig {
 
                 .authorizeHttpRequests(authorizeHttpRequests ->
                         authorizeHttpRequests
-                                .requestMatchers("/health", "/swagger-ui/**", "/v3/api-docs/**",
-                                        "/szs/signup", "/szs/login").permitAll()
+                                .requestMatchers("/health", "/swagger-ui/**", "/v3/api-docs/**").permitAll()
                                 .requestMatchers(PathRequest.toH2Console()).permitAll()
                                 .anyRequest().authenticated()
                 )
