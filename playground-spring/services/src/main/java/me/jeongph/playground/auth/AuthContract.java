@@ -16,7 +16,7 @@ public interface AuthContract {
     );
 
     @Operation(summary = "로그인 API")
-    @PostMapping("/szs/login")
+    @PostMapping("/login")
     ResponseEntity<LoginRes> login(
             @RequestBody LoginReq req
     );
