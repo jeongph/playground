@@ -1,2 +1,2 @@
 # temp-kotlin
-아무때나 사용하기 위해 만들어두는 intellij base kotlin temp repo
+Kotlin 코드를 간단히 실험할 때 사용하는 IntelliJ 프로젝트다.
