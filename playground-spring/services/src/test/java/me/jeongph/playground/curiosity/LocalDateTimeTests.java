@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class LocalDateTimeTests {
 
     @Test
-    @DisplayName("LocalDateTime 을 응용해서 for 문 사용하기")
+    @DisplayName("LocalDateTime을 응용해서 for 문 사용하기")
     void test() {
         // given
         LocalDate januaryFirstDay = LocalDate.of(2024, 1, 1);

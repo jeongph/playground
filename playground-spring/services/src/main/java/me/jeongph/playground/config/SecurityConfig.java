@@ -40,7 +40,7 @@ public class SecurityConfig {
                                 .anyRequest().authenticated()
                 )
 
-                .headers(headers -> // 설정 안해주면 H2 를 못들어감
+                .headers(headers -> // 설정 안 해주면 H2에 못 들어감
                         headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::sameOrigin)
                 )
                 .with(new JwtSecurityConfig(tokenProvider), customizer -> {

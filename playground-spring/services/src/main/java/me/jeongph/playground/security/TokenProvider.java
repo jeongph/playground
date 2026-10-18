@@ -75,7 +75,7 @@ public class TokenProvider implements InitializingBean {
             Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token);
             return true;
         } catch (Exception e) {
-            log.info("잘못된 토큰정보");
+            log.info("잘못된 토큰 정보");
             return false;
         }
     }
