@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ListTests {
 
     @Test
-    @DisplayName("자바에서 .toList 를 하면 ImmutableCollections 형의 리스트를 반환한다.")
+    @DisplayName("자바에서 .toList를 하면 ImmutableCollections 형의 리스트를 반환한다.")
     void test() {
         // given
         var list = List.of("", "");
@@ -25,7 +25,7 @@ public class ListTests {
     }
 
     @Test
-    @DisplayName("자바에서 .collect(Collectors.toList()) 를 하면 ArrayList 형의 리스트를 반환한다.")
+    @DisplayName("자바에서 .collect(Collectors.toList())를 하면 ArrayList 형의 리스트를 반환한다.")
     void test2() {
         // given
         var list = List.of("", "");

@@ -5,14 +5,14 @@ public class MySelectionSort {
 
         // 전체 배열을 순회
         for (int i = 0; i < arrLen; i++) {
-            int min = i; // 최솟값 위치을 선택해서 맨앞으로 순차정렬
+            int min = i; // 최솟값 위치를 선택해서 맨 앞으로 순차 정렬
 
-            // 선택된 항을 제외한 뒷쪽의 모든 항을 검색
+            // 선택된 항을 제외한 뒤쪽의 모든 항을 검색
             for (int k = i + 1; k < arrLen; k++) {
                 if (arr[k] < arr[min]) min = k;
             }
 
-            // 찾은 최소값과 i 위치를 변경
+            // 찾은 최솟값과 i 위치를 변경
             int temp = arr[i];
             arr[i] = arr[min];
             arr[min] = temp;

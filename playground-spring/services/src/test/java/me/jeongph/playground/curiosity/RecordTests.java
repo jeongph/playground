@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class RecordTests extends AcceptanceTest {
 
     @Test
-    @DisplayName("Record 는 getter 이름으로 필드를 추적해주기도 한다")
+    @DisplayName("Record는 getter 이름으로 필드를 추적해주기도 한다")
     void recordTest() {
         ExtractableResponse<Response> actual = RestAssured
                 .given().contentType("application/json").log().all()
